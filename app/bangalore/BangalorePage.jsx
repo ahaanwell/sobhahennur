@@ -4,6 +4,21 @@ import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import { SobhaProjectCards } from "@/components/TopSobhaProjects";
 
+export const bangaloreFaqs = [
+  {
+    question: "Which part of Bangalore is Sobha Hennur in?",
+    answer: "Sobha Hennur is on Hennur Road in North-East Bangalore, close to Kalyan Nagar, HRBR Layout and Thanisandra, with access towards Manyata Tech Park, the Outer Ring Road and the airport side of the city.",
+  },
+  {
+    question: "What are some well-known Sobha projects in Bangalore?",
+    answer: "Notable SOBHA developments in Bangalore include Sobha Liora in Whitefield, Sobha One World off Hoskote, Sobha Neopolis on Panathur Road off Marathahalli-ORR, Sobha Queens Towers and Sobha Madison Heights in the Attibele-Hosur Road belt, and Sobha Hennur on Hennur Road.",
+  },
+  {
+    question: "How is Sobha Hennur different from other Sobha projects in Bangalore?",
+    answer: "Sobha Hennur is at the pre-launch stage with RERA approval under process. It is planned on 45 acres with about 17 acres in Phase 1, offering 2, 3, 3.5 and 4 BHK homes from 1,500 to 2,230 sq.ft., priced from ₹2.40 Cr onwards with possession expected by 2030.",
+  },
+];
+
 function BangalorePage() {
   return (
     <>
@@ -18,7 +33,7 @@ function BangalorePage() {
           <DownloadActions />
 
           <div className="space-y-6 text-gray-800 mt-8">
-            <img
+            <img width={600} height={350}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/bangalore.webp"
               alt="Bangalore city skyline and residential growth"
@@ -222,6 +237,21 @@ function BangalorePage() {
             <p className="leading-relaxed">
               Bangalore rewards buyers who pick the right corridor for their own routine rather than the one that is trending. If North-East Bangalore matches yours, Sobha Hennur is worth putting on your shortlist, and the <Link href="/price">price</Link>, <Link href="/floor-plan">floor plan</Link> and <Link href="/location">location</Link> pages give you the details you need to take the next step.
             </p>
+          </div>
+
+          <div className="space-y-6 text-gray-800 mt-10">
+            <h2 className="text-2xl font-semibold text-gray-900">
+              Sobha Projects in Bangalore: FAQs
+            </h2>
+
+            {bangaloreFaqs.map((faq) => (
+              <div key={faq.question}>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {faq.question}
+                </h3>
+                <p className="mt-2 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </main>

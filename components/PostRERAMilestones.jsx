@@ -1,13 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function PostRERAMilestones() {
     return (
         <section
-            id="ReraApprovalsLegalDocumentation"
-            aria-labelledby="rera-heading"
+            id="PostRERAMilestones"
+            aria-labelledby="post-rera-milestones-heading"
             className="w-full bg-white pt-14 px-4 md:px-0"
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="post-rera-milestones-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Post-RERA Milestones, What Happens Next

@@ -1,5 +1,14 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
+// Add the real Sobha Hennur profile urls here; empty entries are hidden.
+const socialLinks = [
+  { name: "Facebook", url: "", Icon: FaFacebookF, hover: "hover:bg-blue-600" },
+  { name: "Instagram", url: "", Icon: FaInstagram, hover: "hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500" },
+  { name: "LinkedIn", url: "", Icon: FaLinkedinIn, hover: "hover:bg-blue-700" },
+  { name: "X (Twitter)", url: "", Icon: FaTwitter, hover: "hover:bg-sky-500" },
+  { name: "YouTube", url: "", Icon: FaYoutube, hover: "hover:bg-red-500" },
+];
+
 export default function Footer() {
   return (
     <footer>
@@ -48,55 +57,40 @@ export default function Footer() {
             </ul>
           </nav>
 
-        {/* Divider */}
+          {/* Social Media: an icon is shown only once its url is filled in */}
+          {socialLinks.some((item) => item.url) && (
+            <>
+            <div className="border-t border-gray-200"></div>
+            <div className="flex justify-center gap-5">
+              {socialLinks
+                .filter((item) => item.url)
+                .map(({ name, url, Icon, hover }) => (
+                  <a
+                    key={name}
+                    href={url}
+                    aria-label={`Sobha Hennur on ${name}`}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className={`w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 ${hover} hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm`}
+                  >
+                    <Icon size={14} />
+                  </a>
+                ))}
+            </div>
+            </>
+          )}
+
           <div className="border-t border-gray-200"></div>
-
-          {/* Social Media */}
-          <div className="flex justify-center gap-5">
+          <p className="text-center text-xs text-gray-600">
+            Developed and Marketing by{" "}
             <a
-              href="https://www.facebook.com/sattvaaangane"
+              href="https://www.mndigitalagency.com/"
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
             >
-              <FaFacebookF size={14} />
+              M2N Digital Agency
             </a>
-
-            <a
-              href="#"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
-            >
-              <FaInstagram size={14} />
-            </a>
-
-            <a
-              href="#"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-blue-700 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
-            >
-              <FaLinkedinIn size={14} />
-            </a>
-
-            <a
-              href="https://x.com/sattvaaangane"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
-            >
-              <FaTwitter size={14} />
-            </a>
-            <a
-              href="https://www.youtube.com/@sattvaaangane"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
-            >
-              <FaYoutube size={14} />
-            </a>
-          </div>
+          </p>
       </div>
     </footer>
   );

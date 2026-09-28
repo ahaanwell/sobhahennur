@@ -1,15 +1,13 @@
 import BlogSection from "@/components/BlogsSection";
-import BangalorePage from "./BangalorePage";
+import BangalorePage, { bangaloreFaqs } from "./BangalorePage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Bangalore | Top 5 Sobha Projects in Bangalore",
-    template: "%s | Sobha Hennur Bangalore",
+    absolute: "Top 5 Sobha Projects in Bangalore | Sobha Hennur",
   },
 
   description:
-    "Explore Bangalore's residential market zone by zone, see where Hennur fits on the city map, and compare the top 5 Sobha projects in Bangalore including Sobha Liora, Sobha One World, Sobha Neopolis, Sobha Queens Towers and Sobha Madison Heights.",
+    "Compare the top 5 Sobha projects in Bangalore, including Sobha Liora, One World and Neopolis, and see where Sobha Hennur on Hennur Road fits in.",
 
   keywords: [
     "Sobha Hennur Bangalore",
@@ -117,32 +115,14 @@ export default function page() {
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Which part of Bangalore is Sobha Hennur in?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is on Hennur Road in North-East Bangalore, close to Kalyan Nagar, HRBR Layout and Thanisandra, with access towards Manyata Tech Park, the Outer Ring Road and the airport side of the city."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "What are some well-known Sobha projects in Bangalore?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Notable SOBHA developments in Bangalore include Sobha Liora in Whitefield, Sobha One World off Hoskote, Sobha Neopolis on Panathur Road off Marathahalli-ORR, Sobha Queens Towers and Sobha Madison Heights in the Attibele-Hosur Road belt, and Sobha Hennur on Hennur Road."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "How is Sobha Hennur different from other Sobha projects in Bangalore?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is at the pre-launch stage with RERA approval under process. It is planned on 45 acres with about 17 acres in Phase 1, offering 2, 3, 3.5 and 4 BHK homes from 1,500 to 2,230 sq.ft., priced from ₹2.40 Cr onwards with possession expected by 2030."
-            }
+        mainEntity: bangaloreFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
           }
-        ]
+        }))
       }
 
     ]

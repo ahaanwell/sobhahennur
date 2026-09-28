@@ -13,13 +13,13 @@ const floorPlans = [
     id: 2,
     label: "3 BHK Floor Plan",
     image: "/images/floor-plan.webp",
-    alt: "3 BHK Floor Plan",
+    alt: "Sobha Hennur 3 BHK floor plan",
   },
   {
     id: 5,
     label: "3.5 BHK Floor Plan",
     image: "/images/floor-plan.webp",
-    alt: "3 BHK Floor Plan",
+    alt: "Sobha Hennur 3.5 BHK floor plan",
   },
   {
     id: 4,
@@ -67,22 +67,22 @@ export default function FloorPlanSection() {
               <tbody>
                 <tr>
                   <td className="border border-gray-300 px-4 py-3">2 BHK</td>
-                  <td className="border border-gray-300 px-4 py-3">From 1,500 sq.ft.</td>
+                  <td className="border border-gray-300 px-4 py-3">About 1,500 sq.ft.</td>
                   <td className="border border-gray-300 px-4 py-3">Couples and small families who want generous rooms rather than extra rooms</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-3">3 BHK</td>
-                  <td className="border border-gray-300 px-4 py-3">Within 1,500 – 2,230 sq.ft.</td>
+                  <td className="border border-gray-300 px-4 py-3">1,750 – 1,950 sq.ft.</td>
                   <td className="border border-gray-300 px-4 py-3">Families with children, or buyers who need a dedicated guest room</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-3">3.5 BHK</td>
-                  <td className="border border-gray-300 px-4 py-3">Within 1,500 – 2,230 sq.ft.</td>
+                  <td className="border border-gray-300 px-4 py-3">2,000 – 2,100 sq.ft.</td>
                   <td className="border border-gray-300 px-4 py-3">Households that need a study, home office or prayer room alongside three bedrooms</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-3">4 BHK</td>
-                  <td className="border border-gray-300 px-4 py-3">Up to 2,230 sq.ft.</td>
+                  <td className="border border-gray-300 px-4 py-3">About 2,230 sq.ft.</td>
                   <td className="border border-gray-300 px-4 py-3">Larger or multi-generational families living under one roof</td>
                 </tr>
               </tbody>
@@ -90,7 +90,7 @@ export default function FloorPlanSection() {
           </div>
 
           <p className="text-sm text-gray-600 leading-relaxed">
-            Unit-wise areas have not yet been published for each configuration. Ask for the exact carpet and super built-up area of the specific unit you are considering.
+            Sizes are indicative pre-launch figures. Ask for the exact carpet and super built-up area of the specific unit you are considering.
           </p>
         </div>
         <ul

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import EMICalculator from "./Emicalculator";
 import DownloadCostSheetActions from "./DownloadCostSheetActions";
 
@@ -68,7 +69,7 @@ export default function PriceListSection() {
             </table>
           </div>
           <div className="px-4 md:px-0">
-            <img
+            <img width={320} height={174}
               className="w-full"
               loading="lazy"
               src="/images/costing-details.webp" alt="Costing Details" />

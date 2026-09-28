@@ -1,27 +1,25 @@
 import BlogSection from "@/components/BlogsSection";
-import AmenitiesPage from "./AmenitiesPage";
+import AmenitiesPage, { amenitiesFaqs } from "./AmenitiesPage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Amenities | Clubhouse, Swimming Pool & Lifestyle Facilities",
-    template: "%s | Sobha Hennur Amenities",
+    absolute: "Sobha Hennur Amenities & Project Facilities",
   },
 
   description:
-    "Explore the premium amenities at Sobha Hennur in Budigere Cross, Old Madras Road Bangalore including clubhouse, swimming pool, gym, landscaped gardens, sports courts, kids play area and modern lifestyle facilities.",
+    "Explore Sobha Hennur Amenities, project scale, Phase 1 details, apartment options and key checks for reviewing the official facilities plan.",
 
   keywords: [
     "Sobha Hennur amenities",
-    "Sobha Hennur Bangalore amenities",
+    "Sobha Hennur facilities",
+    "Sobha Hennur project facilities",
+    "Sobha Hennur amenities list",
+    "Sobha Hennur Phase 1",
     "Sobha Hennur clubhouse",
-    "Sobha Hennur lifestyle amenities",
-    "Sobha Hennur sports facilities",
-    "Sobha Hennur swimming pool",
-    "Sobha Hennur gym",
-    "Sobha Hennur kids play area",
-    "Budigere Cross apartment amenities",
-    "luxury apartment amenities Bangalore"
+    "Sobha Hennur master plan amenities",
+    "Sobha Hennur Road apartments",
+    "Hennur Road apartment amenities",
+    "luxury apartment amenities Bangalore",
   ],
 
   metadataBase: new URL("https://www.sobhahennur.co"),
@@ -31,18 +29,15 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Sobha Hennur Amenities | Premium Lifestyle Facilities in Bangalore",
+    title: "Sobha Hennur Amenities & Project Facilities",
     description:
-      "Discover modern lifestyle amenities at Sobha Hennur including clubhouse, fitness center, swimming pool, landscaped gardens and sports courts.",
+      "Explore Sobha Hennur Amenities, project scale, Phase 1 details, apartment options and key checks for reviewing the official facilities plan.",
     url: "https://www.sobhahennur.co/amenities",
     siteName: "Sobha Hennur",
     images: [
       {
-        url: "https://www.sobhahennur.co/images/amenities.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Sobha Hennur Amenities",
+        url: "https://www.sobhahennur.co/images/amenities.webp",
+        alt: "Sobha Hennur amenities and project facilities",
       },
     ],
     locale: "en_IN",
@@ -51,13 +46,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Sobha Hennur Amenities | Luxury Lifestyle Facilities",
+    title: "Sobha Hennur Amenities & Project Facilities",
     description:
-      "Explore modern amenities at Sobha Hennur including clubhouse, gym, sports courts and landscaped gardens.",
-    images: [
-      "https://www.sobhahennur.co/images/amenities.jpeg"
-    ],
+      "Explore Sobha Hennur Amenities, project scale, Phase 1 details, apartment options and key checks for reviewing the official facilities plan.",
+    images: ["https://www.sobhahennur.co/images/amenities.webp"],
   },
 
   robots: {
@@ -101,89 +93,46 @@ export default function page() {
       },
 
       {
+        "@type": "WebPage",
+        name: "Sobha Hennur Amenities & Project Facilities",
+        description:
+          "Explore Sobha Hennur Amenities, project scale, Phase 1 details, apartment options and key checks for reviewing the official facilities plan.",
+        url: "https://www.sobhahennur.co/amenities",
+        inLanguage: "en-IN",
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Sobha Hennur",
+          url: "https://www.sobhahennur.co/"
+        }
+      },
+
+      {
         "@type": "ApartmentComplex",
         name: "Sobha Hennur",
         description:
-          "Sobha Hennur offers modern lifestyle amenities including clubhouse, swimming pool, landscaped gardens, fitness center, sports courts and kids play area in East Bangalore.",
+          "Sobha Hennur is a pre-launch premium residential project by SOBHA Limited on Hennur Road, Bangalore, planned across 45 acres with an approximately 17-acre Phase 1 and 2, 3, 3.5 and 4 BHK apartments from 1,500 to 2,230 sq.ft.",
         url: "https://www.sobhahennur.co/amenities",
-        image: "https://www.sobhahennur.co/images/amenities.jpeg",
+        image: "https://www.sobhahennur.co/images/amenities.webp",
 
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Hennur Main Road, North Bangalore",
+          streetAddress: "Hennur Road",
           addressLocality: "Bangalore",
           addressRegion: "Karnataka",
-          postalCode: "560049",
           addressCountry: "IN"
-        },
-
-        amenityFeature: [
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Clubhouse",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Swimming Pool",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Gymnasium",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Jogging Track",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Children Play Area",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Basketball Court",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Badminton Court",
-            value: true
-          }
-        ]
+        }
       },
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What amenities are available at Sobha Hennur?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur offers modern amenities including a clubhouse, swimming pool, gymnasium, sports courts, landscaped gardens, jogging tracks and children's play areas."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Does Sobha Hennur have a clubhouse?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Sobha Hennur features a modern clubhouse with indoor games, lounge areas, multipurpose halls and community spaces."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Are there sports facilities at Sobha Hennur?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, the project includes badminton courts, basketball courts, cricket practice areas, skating rink and other sports amenities."
-            }
+        mainEntity: amenitiesFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
           }
-        ]
+        }))
       }
 
     ]

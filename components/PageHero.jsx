@@ -23,9 +23,9 @@ export default function PageHero({ title }) {
           <span>{title}</span>
         </div>
 
-        <h2 className="text-2xl md:text-4xl font-semibold">
+        <p className="text-2xl md:text-4xl font-semibold">
           {title}
-        </h2>
+        </p>
 
       </div>
 

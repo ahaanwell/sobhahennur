@@ -118,7 +118,7 @@ export default function LeadModal({
 
           <div className="hidden md:flex flex-col items-center justify-center gap-6 px-5 py-6 border-r border-gray-100">
             <div className="text-center">
-              <img
+              <img width={512} height={512}
                 src="/images/telephone-call.webp"
                 className="w-12 mx-auto mb-2"
                 alt=""
@@ -129,7 +129,7 @@ export default function LeadModal({
             </div>
 
             <div className="text-center">
-              <img
+              <img width={512} height={512}
                 src="/images/house.webp"
                 className="w-12 mx-auto mb-2"
                 alt=""
@@ -140,7 +140,7 @@ export default function LeadModal({
             </div>
 
             <div className="text-center">
-              <img
+              <img width={512} height={512}
                 src="/images/rupees.webp"
                 className="w-12 mx-auto mb-2"
                 alt=""
@@ -154,7 +154,7 @@ export default function LeadModal({
           <div className="flex-1 px-6 py-6">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
-              <input
+              <input aria-label="Name"
                 type="text"
                 name="name"
                 value={leadData.name}
@@ -165,7 +165,7 @@ export default function LeadModal({
               />
 
               <div className="flex gap-2 text-gray-900 border-b border-gray-300 focus-within:border-primary pb-2">
-                <select
+                <select aria-label="Country code"
                   name="countryCode"
                   value={leadData.countryCode}
                   onChange={handleChange}
@@ -177,7 +177,7 @@ export default function LeadModal({
                   <option value="+1(USA)">+1(USA)</option>
                 </select>
 
-                <input
+                <input aria-label="Mobile number"
                   type="tel"
                   name="number"
                   value={leadData.number}
@@ -188,7 +188,7 @@ export default function LeadModal({
                 />
               </div>
 
-              <input
+              <input aria-label="Email address"
                 type="email"
                 name="email"
                 value={leadData.email}

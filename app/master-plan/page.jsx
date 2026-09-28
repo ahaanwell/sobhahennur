@@ -1,27 +1,25 @@
 import BlogSection from "@/components/BlogsSection";
-import MasterPlanPage from "./MasterPlanPage";
+import MasterPlanPage, { masterPlanFaqs } from "./MasterPlanPage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Master Plan | Township Layout & Project Site Plan Budigere Cross",
-    template: "%s | Sobha Hennur Master Plan",
+    absolute: "Sobha Hennur Master Plan, Layout & Project Details",
   },
 
   description:
-    "Explore the master plan of Sobha Hennur located at Hennur Main Road, North Bangalore. Discover the well-planned township layout with residential towers, landscaped gardens, modern amenities, and open green spaces.",
+    "Explore the Sobha Hennur master plan, 45-acre development, 17-acre Phase 1, apartment mix, project status and key layout details for buyers.",
 
   keywords: [
     "Sobha Hennur master plan",
-    "Sobha Hennur Bangalore master plan",
-    "Sobha Hennur Budigere Cross master plan",
-    "Sobha Hennur township layout",
+    "Sobha Hennur layout",
     "Sobha Hennur site plan",
-    "Sobha Hennur project layout",
-    "Sobha Hennur apartment township plan",
-    "Budigere Cross apartment master plan",
-    "Sobha Hennur tower layout",
-    "Sobha Hennur residential layout Bangalore"
+    "Sobha Hennur project details",
+    "Sobha Hennur Phase 1",
+    "Sobha Hennur 45 acres",
+    "Sobha Hennur apartment mix",
+    "Sobha Hennur Road master plan",
+    "Hennur Road township layout",
+    "Sobha new launch Bangalore master plan",
   ],
 
   metadataBase: new URL("https://www.sobhahennur.co"),
@@ -31,18 +29,15 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Sobha Hennur Master Plan | Township Layout & Project Site Plan",
+    title: "Sobha Hennur Master Plan, Layout & Project Details",
     description:
-      "View the detailed master layout of Sobha Hennur Bangalore featuring residential towers, landscaped gardens, modern amenities, and open green spaces.",
+      "Explore the Sobha Hennur master plan, 45-acre development, 17-acre Phase 1, apartment mix, project status and key layout details for buyers.",
     url: "https://www.sobhahennur.co/master-plan",
     siteName: "Sobha Hennur",
     images: [
       {
-        url: "https://www.sobhahennur.co/images/master-plan-banner.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Sobha Hennur Master Plan Layout",
+        url: "https://www.sobhahennur.co/images/master-plan.webp",
+        alt: "Sobha Hennur master plan and site layout",
       },
     ],
     locale: "en_IN",
@@ -51,13 +46,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Sobha Hennur Master Plan | Township Layout Budigere Cross",
+    title: "Sobha Hennur Master Plan, Layout & Project Details",
     description:
-      "Discover the master plan layout of Sobha Hennur Bangalore including tower placement, amenities, green areas and project infrastructure.",
-    images: [
-      "https://www.sobhahennur.co/images/master-plan-banner.jpeg",
-    ],
+      "Explore the Sobha Hennur master plan, 45-acre development, 17-acre Phase 1, apartment mix, project status and key layout details for buyers.",
+    images: ["https://www.sobhahennur.co/images/master-plan.webp"],
   },
 
   robots: {
@@ -89,88 +81,63 @@ export default function page() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.sobhahennur.co/",
+            item: "https://www.sobhahennur.co/"
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Master Plan",
-            item: "https://www.sobhahennur.co/master-plan",
-          },
-        ],
+            item: "https://www.sobhahennur.co/master-plan"
+          }
+        ]
+      },
+
+      {
+        "@type": "WebPage",
+        name: "Sobha Hennur Master Plan, Layout & Project Details",
+        description:
+          "Explore the Sobha Hennur master plan, 45-acre development, 17-acre Phase 1, apartment mix, project status and key layout details for buyers.",
+        url: "https://www.sobhahennur.co/master-plan",
+        inLanguage: "en-IN",
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: "https://www.sobhahennur.co/images/master-plan.webp",
+          caption: "Sobha Hennur master plan"
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Sobha Hennur",
+          url: "https://www.sobhahennur.co/"
+        }
       },
 
       {
         "@type": "ApartmentComplex",
-        name: "Sobha Hennur Master Plan",
+        name: "Sobha Hennur",
         description:
-          "Master plan of Sobha Hennur residential project in Budigere Cross Bangalore featuring 4 towers, landscaped gardens, modern amenities and planned open spaces.",
+          "Sobha Hennur is a pre-launch premium residential project by SOBHA Limited on Hennur Road, Bangalore, planned across 45 acres with an approximately 17-acre Phase 1, 4,400+ units and 2, 3, 3.5 and 4 BHK apartments from 1,500 to 2,230 sq.ft.",
         url: "https://www.sobhahennur.co/master-plan",
-        image:
-          "https://www.sobhahennur.co/images/master-plan-banner.webp",
+        image: "https://www.sobhahennur.co/images/master-plan.webp",
 
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Hennur Main Road, North Bangalore",
+          streetAddress: "Hennur Road",
           addressLocality: "Bangalore",
           addressRegion: "Karnataka",
           addressCountry: "IN"
-        },
-
-        numberOfAccommodationUnits: "600+",
-
-        amenityFeature: [
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Landscaped Gardens",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Clubhouse",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Swimming Pool",
-            value: true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Children Play Area",
-            value: true
-          }
-        ]
+        }
       },
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What does the Sobha Hennur master plan include?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "The master plan of Sobha Hennur includes residential towers, landscaped gardens, modern amenities, open green spaces and internal roads designed for comfortable living."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "How many towers are included in Sobha Hennur master plan?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "The master plan of Sobha Hennur includes 4 residential towers with G+35 floors."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Where is Sobha Hennur located?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is located on Old Madras Main Road at Budigere Cross in East Bangalore."
-            }
+        mainEntity: masterPlanFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
           }
-        ]
+        }))
       }
 
     ]

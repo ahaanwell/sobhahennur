@@ -8,13 +8,13 @@ export default function SobhaLimited() {
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="sobha-limited-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     SOBHA Limited
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <img
+                <img width={1000} height={664}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/sobha-limited.webp"
               alt="SOBHA Limited"

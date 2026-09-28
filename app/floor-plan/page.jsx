@@ -1,29 +1,25 @@
 import BlogSection from "@/components/BlogsSection";
-import FloorPlanPage from "./FloorPlanPage";
+import FloorPlanPage, { floorPlanFaqs } from "./FloorPlanPage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Floor Plan | Old Madras Main Road | Pre Launch Offer",
-    template: "%s | Sobha Hennur Floor Plan",
+    absolute: "Sobha Hennur Floor Plan, Sizes & Configurations",
   },
 
   description:
-    "Explore the detailed floor plans of Sobha Hennur located at Hennur Main Road, North Bangalore. View well-designed 2 BHK, 3 BHK and 4 BHK apartment layouts with spacious rooms, modern architecture, and efficient living spaces.",
+    "Explore the Sobha Hennur floor plan, planned 2, 3, 3.5 and 4 BHK apartments, size range, project details and key points to review before buying.",
 
   keywords: [
     "Sobha Hennur floor plan",
-    "Sobha Hennur Bangalore floor plan",
-    "Sobha Hennur Budigere Cross floor plan",
-    "Sobha Hennur apartment layout",
-    "Sobha Hennur unit plan",
+    "Sobha Hennur floor plans",
+    "Sobha Hennur apartment sizes",
+    "Sobha Hennur configurations",
     "Sobha Hennur 2 BHK floor plan",
     "Sobha Hennur 3 BHK floor plan",
+    "Sobha Hennur 3.5 BHK floor plan",
     "Sobha Hennur 4 BHK floor plan",
-    "Sobha Hennur flat layout",
-    "Sobha Hennur apartment design",
-    "Budigere Cross apartment floor plan",
-    "apartments floor plan Bangalore",
+    "Sobha Hennur unit plan",
+    "Hennur Road apartment floor plan",
   ],
 
   metadataBase: new URL("https://www.sobhahennur.co"),
@@ -33,18 +29,15 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Sobha Hennur Floor Plan | 2, 3 & 4 BHK Apartment Layouts",
+    title: "Sobha Hennur Floor Plan, Sizes & Configurations",
     description:
-      "View the spacious floor plans and apartment layouts of Sobha Hennur Bangalore featuring modern architecture and smart living spaces.",
+      "Explore the Sobha Hennur floor plan, planned 2, 3, 3.5 and 4 BHK apartments, size range, project details and key points to review before buying.",
     url: "https://www.sobhahennur.co/floor-plan",
     siteName: "Sobha Hennur",
     images: [
       {
-        url: "https://www.sobhahennur.co/images/floor-plan-banner.webp",
-        width: 1200,
-        height: 630,
-        alt: "Sobha Hennur Floor Plan Layout",
+        url: "https://www.sobhahennur.co/images/floor-plan.webp",
+        alt: "Sobha Hennur floor plan for 2, 3, 3.5 and 4 BHK apartments",
       },
     ],
     locale: "en_IN",
@@ -53,13 +46,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Sobha Hennur Floor Plan | 2, 3 & 4 BHK Apartment Layout",
+    title: "Sobha Hennur Floor Plan, Sizes & Configurations",
     description:
-      "Discover spacious and modern floor plans at Sobha Hennur Bangalore. View detailed apartment layouts for 2 BHK, 3 BHK and 4 BHK homes.",
-    images: [
-      "https://www.sobhahennur.co/images/floor-plan-banner.jpeg",
-    ],
+      "Explore the Sobha Hennur floor plan, planned 2, 3, 3.5 and 4 BHK apartments, size range, project details and key points to review before buying.",
+    images: ["https://www.sobhahennur.co/images/floor-plan.webp"],
   },
 
   robots: {
@@ -83,6 +73,7 @@ export default function page() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
+
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -90,84 +81,73 @@ export default function page() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.sobhahennur.co/",
+            item: "https://www.sobhahennur.co/"
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Floor Plan",
-            item: "https://www.sobhahennur.co/floor-plan",
-          },
-        ],
+            item: "https://www.sobhahennur.co/floor-plan"
+          }
+        ]
       },
 
       {
-        "@type": "Apartment",
-        name: "Sobha Hennur Floor Plan",
+        "@type": "WebPage",
+        name: "Sobha Hennur Floor Plan, Sizes & Configurations",
         description:
-          "Detailed floor plans of Sobha Hennur apartments located in Budigere Cross Bangalore including 2 BHK, 3 BHK and 4 BHK layouts.",
+          "Explore the Sobha Hennur floor plan, planned 2, 3, 3.5 and 4 BHK apartments, size range, project details and key points to review before buying.",
         url: "https://www.sobhahennur.co/floor-plan",
-        image:
-          "https://www.sobhahennur.co/images/floor-plan-banner.webp",
+        inLanguage: "en-IN",
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: "https://www.sobhahennur.co/images/floor-plan.webp",
+          caption: "Sobha Hennur floor plan"
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Sobha Hennur",
+          url: "https://www.sobhahennur.co/"
+        }
+      },
+
+      {
+        "@type": "ApartmentComplex",
+        name: "Sobha Hennur",
+        description:
+          "Sobha Hennur is a pre-launch premium residential project by SOBHA Limited on Hennur Road, Bangalore, offering 2, 3, 3.5 and 4 BHK apartments from 1,500 to 2,230 sq.ft.",
+        url: "https://www.sobhahennur.co/floor-plan",
+        image: "https://www.sobhahennur.co/images/floor-plan.webp",
 
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Hennur Main Road, North Bangalore",
+          streetAddress: "Hennur Road",
           addressLocality: "Bangalore",
           addressRegion: "Karnataka",
-          addressCountry: "IN",
+          addressCountry: "IN"
         },
 
-        numberOfRooms: "2,3,4",
-        amenityFeature: [
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Spacious Living Rooms",
-            value: true,
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Modern Kitchen Layout",
-            value: true,
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            name: "Balcony Design",
-            value: true,
-          },
-        ],
+        containsPlace: [
+          { "@type": "Apartment", name: "2 BHK Apartment", numberOfRooms: 2, floorSize: { "@type": "QuantitativeValue", value: 1500, unitCode: "FTK" } },
+          { "@type": "Apartment", name: "3 BHK Apartment", numberOfRooms: 3, floorSize: { "@type": "QuantitativeValue", minValue: 1750, maxValue: 1950, unitCode: "FTK" } },
+          { "@type": "Apartment", name: "3.5 BHK Apartment", numberOfRooms: 3.5, floorSize: { "@type": "QuantitativeValue", minValue: 2000, maxValue: 2100, unitCode: "FTK" } },
+          { "@type": "Apartment", name: "4 BHK Apartment", numberOfRooms: 4, floorSize: { "@type": "QuantitativeValue", value: 2230, unitCode: "FTK" } }
+        ]
       },
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What apartment types are available in Sobha Hennur floor plan?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur offers 2 BHK, 3 BHK and 4 BHK apartment floor plans designed for spacious and modern living.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Where is Sobha Hennur located?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is located on Old Madras Main Road at Budigere Cross in East Bangalore.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Are the floor plans of Sobha Hennur spacious?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, the floor plans are designed with spacious living areas, modern kitchens, balconies and efficient layouts for comfortable living.",
-            },
-          },
-        ],
-      },
-    ],
+        mainEntity: floorPlanFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
+      }
+
+    ]
   };
 
   return (

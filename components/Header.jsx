@@ -34,7 +34,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-14">
 
             <Link href="/" className="flex items-center gap-2">
-              <img
+              <img width={204} height={247}
                 src="/images/logo.webp"
                 alt="Sobha Hennur"
                 className="h-10 w-auto"
@@ -85,6 +85,7 @@ export default function Header() {
 
             <button
               className="lg:hidden text-primary"
+              aria-label="Open menu"
               onClick={() => setOpen(true)}
             >
               <Menu size={28} />
@@ -109,6 +110,7 @@ export default function Header() {
           <div className="flex justify-end">
             <button 
             className="text-black"
+            aria-label="Close menu"
             onClick={() => setOpen(false)}>
               <X size={26} />
             </button>

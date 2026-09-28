@@ -8,16 +8,16 @@ export default function PaymentPlanStructure() {
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="payment-plan-structure-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Payment Plan Structure
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <img
+                <img width={820} height={480}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/payment-plan-structure.webp"
-              alt="Rate per Sq.Ft. Analysis"
+              alt="Sobha Hennur payment plan structure"
               loading="lazy"
             />
                 <div className="space-y-6 mt-6">

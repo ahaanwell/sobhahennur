@@ -1,20 +1,16 @@
 "use client";
 import { FaDownload, FaPhone } from "react-icons/fa";
 import LeadModal from "./LeadModal";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
+// No auto-open on mobile: Google penalises popups that cover the page
+// right after a visitor lands. Mobile users have the hero buttons and the
+// bottom bar to open the enquiry form themselves.
 function SmallHeroClient() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modelHeading, SetModelHeading] = useState("");
   const [modelBtnLabel, setModelBtnLabel] = useState("");
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsModalOpen(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
       <div className="flex gap-3 mb-4">

@@ -8,16 +8,16 @@ export default function RateAnalysis() {
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="analysis-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Sobha Hennur Rate per Sq.Ft. Analysis
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <img
+                <img width={1200} height={675}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/analysis.webp"
-              alt="Rate per Sq.Ft. Analysis"
+              alt="Sobha Hennur rate per sq.ft. analysis"
               loading="lazy"
             />
                 <div className="space-y-6 mt-6">

@@ -1,29 +1,27 @@
 import BlogSection from "@/components/BlogsSection";
-import PricePage from "./PricePage";
+import PricePage, { priceFaqs } from "./PricePage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Price | Old Madras Main Road | Pre Launch Offer",
-    template: "%s | Sobha Hennur Price",
+    absolute: "Sobha Hennur Price, Apartment Cost & Sizes",
   },
 
   description:
-    "Discover the latest Sobha Hennur price on Old Madras Main Road with exclusive pre-launch offers. Explore premium homes, floor plans, and early-bird deals in East Bangalore.",
+    "Check Sobha Hennur Price from ₹2.40 crore onwards, apartment configurations, size range, project status, RERA approval and expected possession details.",
 
   keywords: [
     "Sobha Hennur price",
-    "Sobha Hennur Bangalore price",
-    "Sobha Hennur apartment price",
-    "Sobha Hennur Budigere Cross price",
     "Sobha Hennur price list",
+    "Sobha Hennur apartment cost",
+    "Sobha Hennur apartment sizes",
     "Sobha Hennur 2 BHK price",
     "Sobha Hennur 3 BHK price",
+    "Sobha Hennur 3.5 BHK price",
     "Sobha Hennur 4 BHK price",
-    "Sobha Hennur cost",
-    "Sobha Hennur payment plan",
-    "apartments price Budigere Cross",
-    "luxury apartment price Bangalore"
+    "Sobha Hennur cost sheet",
+    "Sobha Hennur Road price",
+    "Sobha apartments price Bangalore",
+    "Hennur Road apartment price",
   ],
 
   metadataBase: new URL("https://www.sobhahennur.co"),
@@ -33,18 +31,15 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Sobha Hennur Price | 2, 3 & 4 BHK Apartment Price List Bangalore",
+    title: "Sobha Hennur Price, Apartment Cost & Sizes",
     description:
-      "Explore the latest price list of Sobha Hennur apartments in Budigere Cross Bangalore including configuration wise pricing and payment plans.",
+      "Check Sobha Hennur Price from ₹2.40 crore onwards, apartment configurations, size range, project status, RERA approval and expected possession details.",
     url: "https://www.sobhahennur.co/price",
     siteName: "Sobha Hennur",
     images: [
       {
-        url: "https://www.sobhahennur.co/images/sattvaaangane.webp",
-        width: 1200,
-        height: 630,
-        alt: "Sobha Hennur Apartment Price List",
+        url: "https://www.sobhahennur.co/images/costing-details.webp",
+        alt: "Sobha Hennur price and cost details",
       },
     ],
     locale: "en_IN",
@@ -53,11 +48,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Sobha Hennur Price | Apartment Price List Budigere Cross",
+    title: "Sobha Hennur Price, Apartment Cost & Sizes",
     description:
-      "View the latest price list of Sobha Hennur Bangalore including 2, 3 and 4 BHK apartment pricing and payment plans.",
-    images: ["https://www.sobhahennur.co/images/sattvaaangane.webp"],
+      "Check Sobha Hennur Price from ₹2.40 crore onwards, apartment configurations, size range, project status, RERA approval and expected possession details.",
+    images: ["https://www.sobhahennur.co/images/costing-details.webp"],
   },
 
   robots: {
@@ -101,58 +95,56 @@ export default function Page() {
       },
 
       {
+        "@type": "WebPage",
+        name: "Sobha Hennur Price, Apartment Cost & Sizes",
+        description:
+          "Check Sobha Hennur Price from ₹2.40 crore onwards, apartment configurations, size range, project status, RERA approval and expected possession details.",
+        url: "https://www.sobhahennur.co/price",
+        inLanguage: "en-IN",
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Sobha Hennur",
+          url: "https://www.sobhahennur.co/"
+        }
+      },
+
+      {
         "@type": "ApartmentComplex",
         name: "Sobha Hennur",
         description:
-          "Sobha Hennur is a premium residential apartment project located at Budigere Cross, Old Madras Main Road Bangalore offering luxury 2, 3 and 4 BHK apartments with modern amenities.",
+          "Sobha Hennur is a pre-launch premium residential project by SOBHA Limited on Hennur Road, Bangalore, offering 2, 3, 3.5 and 4 BHK apartments from 1,500 to 2,230 sq.ft. with prices from ₹2.40 crore onwards.",
         url: "https://www.sobhahennur.co/price",
-        image: "https://www.sobhahennur.co/images/sattvaaangane.webp",
+        image: "https://www.sobhahennur.co/images/costing-details.webp",
 
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Hennur Main Road, North Bangalore",
+          streetAddress: "Hennur Road",
           addressLocality: "Bangalore",
           addressRegion: "Karnataka",
           addressCountry: "IN"
         },
 
         offers: {
-          "@type": "Offer",
+          "@type": "AggregateOffer",
           priceCurrency: "INR",
-          price: "On Request",
-          availability: "https://schema.org/PreOrder",
+          lowPrice: "24000000",
+          highPrice: "39000000",
+          offerCount: "4",
+          availability: "https://schema.org/PreSale",
           url: "https://www.sobhahennur.co/price"
         }
       },
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What is the starting price of Sobha Hennur apartments?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "The starting price of Sobha Hennur apartments depends on the configuration such as 2 BHK, 3 BHK and 4 BHK units. For the latest price list and offers you can request the updated pricing details."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Where is Sobha Hennur located?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is located at Budigere Cross on Old Madras Main Road in East Bangalore."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Does Sobha Hennur offer payment plans?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Sobha Hennur offers flexible payment plans for home buyers including construction linked plans and bank loan options."
-            }
+        mainEntity: priceFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
           }
-        ]
+        }))
       }
 
     ]

@@ -14,12 +14,12 @@ export default function DownloadActions() {
       <div className="flex justify-center items-center gap-6 mt-3">
             <button
               onClick={() => {
-                setModelHeading("Download Broucher");
+                setModelHeading("Download Brochure");
                 setIsModalOpen(true);
               }}
               className="border border-blue-900 px-5 py-2 text-lg rounded cursor-pointer flex justify-center items-center gap-2 text-primary font-medium"
             >
-              <FaDownload /> Broucher
+              <FaDownload /> Brochure
             </button>
             <button
               onClick={() => {

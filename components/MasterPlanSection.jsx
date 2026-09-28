@@ -23,7 +23,7 @@ export default function MasterPlanSection() {
           
             className="relative w-full aspect-[5/3] bg-gray-100 overflow-hidden"
           >
-            <img
+            <img width={750} height={495}
               src="/images/master-plan.webp"
               alt="Master Plan"
               className="w-full h-full object-cover"

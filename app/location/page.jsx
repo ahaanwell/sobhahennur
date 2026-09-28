@@ -1,27 +1,25 @@
 import BlogSection from "@/components/BlogsSection";
-import LocationPage from "./LocationPage";
+import LocationPage, { locationFaqs } from "./LocationPage";
 
 export const metadata = {
   title: {
-    default:
-      "Sobha Hennur Location | Old Madras Road Budigere Cross Bangalore Connectivity",
-    template: "%s | Sobha Hennur Location",
+    absolute: "Sobha Hennur Location, Hennur Road & Future Potential",
   },
 
   description:
-    "Discover the prime location of Sobha Hennur at Budigere Cross on Old Madras Main Road, East Bangalore. Enjoy excellent connectivity to Whitefield, KR Puram, ITPL, Kempegowda International Airport, schools, hospitals, and shopping malls.",
+    "Explore Sobha Hennur Location on Hennur Road, Bangalore, with residential context, future potential, apartment options and approval status.",
 
   keywords: [
     "Sobha Hennur location",
-    "Sobha Hennur Budigere Cross location",
-    "Sobha Hennur Old Madras Road",
-    "Sobha Hennur Bangalore location",
+    "Sobha Hennur Road",
+    "Sobha Hennur address",
+    "Sobha Hennur location map",
     "Sobha Hennur connectivity",
-    "apartments near Budigere Cross",
-    "Budigere Cross residential projects",
-    "Sobha Hennur Whitefield connectivity",
-    "Sobha Hennur airport connectivity",
-    "Sobha Hennur nearby IT parks"
+    "Hennur Road apartments",
+    "Hennur Road Bangalore",
+    "Hennur future potential",
+    "North East Bangalore apartments",
+    "Sobha projects Hennur Road",
   ],
 
   metadataBase: new URL("https://www.sobhahennur.co"),
@@ -31,18 +29,15 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Sobha Hennur Location | Budigere Cross Old Madras Road Bangalore",
+    title: "Sobha Hennur Location, Hennur Road & Future Potential",
     description:
-      "Explore the strategic location of Sobha Hennur in East Bangalore with excellent connectivity to Whitefield, KR Puram, IT hubs, schools, hospitals and Kempegowda International Airport.",
+      "Explore Sobha Hennur Location on Hennur Road, Bangalore, with residential context, future potential, apartment options and approval status.",
     url: "https://www.sobhahennur.co/location",
     siteName: "Sobha Hennur",
     images: [
       {
-        url: "https://www.sobhahennur.co/images/location-banner.png",
-        width: 1200,
-        height: 630,
-        alt: "Sobha Hennur Location Map Budigere Cross",
+        url: "https://www.sobhahennur.co/images/hennur-road.webp",
+        alt: "Sobha Hennur location on Hennur Road, Bangalore",
       },
     ],
     locale: "en_IN",
@@ -51,11 +46,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Sobha Hennur Location | Budigere Cross Connectivity",
+    title: "Sobha Hennur Location, Hennur Road & Future Potential",
     description:
-      "View the location map and connectivity advantages of Sobha Hennur Bangalore near Whitefield and Old Madras Road.",
-    images: ["https://www.sobhahennur.co/images/location-banner.png"],
+      "Explore Sobha Hennur Location on Hennur Road, Bangalore, with residential context, future potential, apartment options and approval status.",
+    images: ["https://www.sobhahennur.co/images/hennur-road.webp"],
   },
 
   robots: {
@@ -99,68 +93,53 @@ export default function page() {
       },
 
       {
-        "@type": "ApartmentComplex",
-        name: "Sobha Hennur",
+        "@type": "WebPage",
+        name: "Sobha Hennur Location, Hennur Road & Future Potential",
         description:
-          "Sobha Hennur is a premium residential apartment project located on Old Madras Main Road near Budigere Cross in East Bangalore with excellent connectivity to Whitefield, KR Puram and Kempegowda International Airport.",
+          "Explore Sobha Hennur Location on Hennur Road, Bangalore, with residential context, future potential, apartment options and approval status.",
         url: "https://www.sobhahennur.co/location",
-        image: "https://www.sobhahennur.co/images/location-banner.png",
-
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Hennur Main Road, North Bangalore",
-          addressLocality: "Bangalore",
-          addressRegion: "Karnataka",
-          postalCode: "560049",
-          addressCountry: "IN"
-        },
-
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: "13.0685",
-          longitude: "77.7440"
+        inLanguage: "en-IN",
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Sobha Hennur",
+          url: "https://www.sobhahennur.co/"
         }
       },
 
       {
-        "@type": "Place",
-        name: "Whitefield IT Hub",
+        "@type": "ApartmentComplex",
+        name: "Sobha Hennur",
+        description:
+          "Sobha Hennur is a pre-launch premium residential project by SOBHA Limited on Hennur Road, Bangalore, planned across 45 acres with 2, 3, 3.5 and 4 BHK apartments from 1,500 to 2,230 sq.ft.",
+        url: "https://www.sobhahennur.co/location",
+        image: "https://www.sobhahennur.co/images/hennur-road.webp",
+        hasMap: "https://maps.app.goo.gl/mgHt22xpDC33Br8B9",
+
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Whitefield",
+          streetAddress: "Hennur Road",
+          addressLocality: "Bangalore",
           addressRegion: "Karnataka",
           addressCountry: "IN"
+        },
+
+        containedInPlace: {
+          "@type": "City",
+          name: "Bangalore",
+          sameAs: "https://en.wikipedia.org/wiki/Bangalore"
         }
       },
 
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Where is Sobha Hennur located?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sobha Hennur is located on Old Madras Main Road near Budigere Cross in East Bangalore with excellent connectivity to Whitefield, KR Puram and the airport."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "How far is Whitefield from Sobha Hennur?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Whitefield IT hub is approximately 10–12 km from the Sobha Hennur project location at Budigere Cross."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "How far is Kempegowda International Airport from Sobha Hennur?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Kempegowda International Airport is approximately 27–30 km from Sobha Hennur and can be reached in around 40–50 minutes depending on traffic."
-            }
+        mainEntity: locationFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
           }
-        ]
+        }))
       }
 
     ]

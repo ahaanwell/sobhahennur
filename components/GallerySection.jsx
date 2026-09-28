@@ -4,14 +4,14 @@ import { useState } from "react";
 import { FaTimes, FaChevronLeft, FaChevronRight, FaExpand } from "react-icons/fa";
 
 const galleryImages = [
-  { id: 1,  src: "/images/banners/sobhahennur.webp",  alt: "Sobha Hennur Gallery 1" },
-  { id: 2,  src: "/images/banners/sobha-hennur.webp",  alt: "Sobha Hennur Gallery 2" },
-  { id: 3,  src: "/images/banners/sobha-hennur-road.webp",  alt: "Sobha Hennur Gallery 3" },
-  { id: 4,  src: "/images/sobhahennur-washroom.webp",  alt: "Washroom" },
-  { id: 5,  src: "/images/sobhahennur-kitchen.webp",  alt: "Kitchen" },
-  { id: 6,  src: "/images/sobhahennur-livingroom.webp",  alt: "Livingroom 1" },
-  { id: 7,  src: "/images/sobhahennur-livingroom1.webp",  alt: "Livingroom 2" },
-  { id: 8,  src: "/images/sobhahennur-dining.webp",  alt: "Dining Hall" },
+  { id: 1,  src: "/images/banners/sobhahennur.webp",  alt: "Sobha Hennur swimming pool and apartment towers (artist's impression)" },
+  { id: 2,  src: "/images/banners/sobha-hennur.webp",  alt: "Sobha Hennur landscaped entrance plaza at dusk (artist's impression)" },
+  { id: 3,  src: "/images/banners/sobha-hennur-road.webp",  alt: "Sobha Hennur apartment towers lit at night (artist's impression)" },
+  { id: 4,  src: "/images/sobhahennur-washroom.webp",  alt: "Sobha Hennur sample apartment washroom" },
+  { id: 5,  src: "/images/sobhahennur-kitchen.webp",  alt: "Sobha Hennur sample apartment kitchen" },
+  { id: 6,  src: "/images/sobhahennur-livingroom.webp",  alt: "Sobha Hennur sample apartment living room" },
+  { id: 7,  src: "/images/sobhahennur-livingroom1.webp",  alt: "Sobha Hennur sample apartment living room, second view" },
+  { id: 8,  src: "/images/sobhahennur-dining.webp",  alt: "Sobha Hennur sample apartment dining area" },
 ];
 
 export default function GallerySection() {

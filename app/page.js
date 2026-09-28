@@ -1,6 +1,10 @@
 import AmenitiesSection from "@/components/AmenitiesSection";
 import BlogSection from "@/components/BlogsSection";
+import BuyerDueDiligenceSection from "@/components/BuyerDueDiligenceSection";
+import BuyerProfileSection from "@/components/BuyerProfileSection";
+import CommuteSection from "@/components/CommuteSection";
 import ConstructionAndProjectStatus from "@/components/ConstructionAndProjectStatus";
+import EMICalculator from "@/components/Emicalculator";
 import EOI from "@/components/EOI";
 import FaqSection from "@/components/FaqSection";
 import FloorPlanSection from "@/components/FloorPlanSection";
@@ -11,11 +15,14 @@ import LocationSection from "@/components/LocationSection";
 import MasterPlanSection from "@/components/MasterPlanSection";
 import PaymentPlanStructure from "@/components/PaymentPlanStructure";
 import PostRERAMilestones from "@/components/PostRERAMilestones";
+import PreBookingChecklistSection from "@/components/PreBookingChecklistSection";
 import PriceListSection from "@/components/PriceListSection";
+import ProjectComparisonSection from "@/components/ProjectComparisonSection";
 import ProjectHighlights from "@/components/ProjectHighlights";
 import RateAnalysis from "@/components/RateAnalysis";
 import ReraApprovalsLegalDocumentation from "@/components/reraApprovalsLegal";
 import SobhaLimited from "@/components/SobhaLimited";
+import SuitableForSection from "@/components/SuitableForSection";
 import TaxesAndStatutory from "@/components/TaxesAndStatutory";
 import TopSobhaProjects from "@/components/TopSobhaProjects";
 const schema = {
@@ -67,7 +74,7 @@ const schema = {
           name: "What are the apartment configurations available at Sobha Hennur?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sobha Hennur is planned to offer 2, 3, 3.5 and 4 BHK apartments, with sizes ranging from approximately 1,500 to 2,230 sq.ft.",
+            text: "Sobha Hennur is planned to offer 2, 3, 3.5 and 4 BHK apartments, providing multiple options for buyers looking for premium residential homes.",
           },
         },
         {
@@ -101,6 +108,7 @@ export default function Home() {
     <HeroSection/>
     <ProjectHighlights/>
     <PriceListSection/>
+    <EMICalculator/>
     <FloorPlanSection/>
     <MasterPlanSection/>
     <LocationSection/>
@@ -114,6 +122,12 @@ export default function Home() {
     <TaxesAndStatutory/>
     <LegalAndRegulatory/>
     <PostRERAMilestones/>
+    <SuitableForSection/>
+    <CommuteSection/>
+    <BuyerProfileSection/>
+    <PreBookingChecklistSection/>
+    <ProjectComparisonSection/>
+    <BuyerDueDiligenceSection/>
     <TopSobhaProjects/>
     <GallerySection/>
     <FaqSection/>

@@ -8,13 +8,13 @@ export default function ConstructionAndProjectStatus() {
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="construction-and-project-status-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Sobha Hennur Construction and Project Status
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <img
+                <img width={1200} height={800}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/construction-and-project-status.webp"
               alt="Construction and Project Status"

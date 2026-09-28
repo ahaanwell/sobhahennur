@@ -21,12 +21,12 @@ const robotoMono = Roboto_Mono({
 export const metadata = {
   title: {
     default:
-      "Sobha Hennur | Pre-Launch 2, 3, 3.5 & 4 BHK Apartments on Hennur Road, Bangalore",
+      "Sobha Hennur | Mega Township Bangalore | Pre Launch Offer- Updated 2026",
     template: "%s | Sobha Hennur Bangalore",
   },
 
   description:
-    "Sobha Hennur by SOBHA Limited is a pre-launch premium apartment project on Hennur Road, Bangalore. Spread over 45 acres with a 17-acre Phase 1, it offers 2, 3, 3.5 & 4 BHK homes from 1,500 to 2,230 sq.ft., priced from ₹2.40 Cr onwards.",
+    "Discover Sobha Hennur, a pre-launch residential township on Hennur Road, Bangalore, offering premium apartments, modern amenities, and convenient connectivity.",
 
   keywords: [
     "Sobha Hennur",
@@ -110,7 +110,10 @@ export const metadata = {
   category: "Real Estate",
 
   verification: {
-    google: "XnQjIMSQGzsEA6dSOT_sqOIHL__aRj8zn2coEhljaKc",
+    google: [
+      "XnQjIMSQGzsEA6dSOT_sqOIHL__aRj8zn2coEhljaKc",
+      "wGOe7eM9S3sTcvkAIgKYcnLLqYWikwMUPS7Ws_SPeFs",
+    ],
   },
 };
 
@@ -133,7 +136,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <head>
         <script
           type="application/ld+json"

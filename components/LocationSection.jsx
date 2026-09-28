@@ -206,10 +206,10 @@ export default function LocationSection() {
   </h2>
   <div className="w-full h-px bg-gray-200 mb-5 mt-3" />
   </div>
-  <img
+  <img width={1200} height={739}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/hennur-road.webp"
-              alt="Hennur Road"
+              alt="Hennur Road corridor, Bangalore"
               loading="lazy"
             />
   <p className="leading-relaxed">
@@ -261,10 +261,10 @@ export default function LocationSection() {
   </h2>
     <div className="w-full h-px bg-gray-200 mb-5 mt-3" />
   </div>
-  <img
+  <img width={600} height={350}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/bangalore.webp"
-              alt="Hennur Road"
+              alt="Bangalore city - home of Sobha Hennur"
               loading="lazy"
             />
 

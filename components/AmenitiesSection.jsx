@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 
 const amenitiesData = [
   { id: 1,  name: "Gymnasium",           image: "/images/gym.svg",    alt: "Gymnasium" },

@@ -8,6 +8,9 @@ export default function HeroSection() {
   return (
     <section className="relative w-full lg:h-[90vh] flex flex-col lg:flex-row overflow-hidden bg-gray-100 lg:bg-transparent">
 
+      {/* The first slide is the largest thing on screen; fetch it early */}
+      <link rel="preload" as="image" href="/images/banners/sobhahennur.webp" fetchPriority="high" />
+
       {/* Slider */}
       <div className="relative w-full h-[260px] lg:absolute lg:inset-0 lg:h-full">
         <HeroSliderClient className="w-full h-full" />

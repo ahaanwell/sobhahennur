@@ -40,6 +40,7 @@ export default function HeroSliderClient({ className }) {
           <button
             key={i}
             onClick={() => setCurrent(i)}
+            aria-label={`Show slide ${i + 1}`}
             className={`h-2 rounded-full transition-all duration-300 ${
               i === current ? "w-8 bg-white" : "w-2 bg-white/60"
             }`}

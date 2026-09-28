@@ -94,12 +94,12 @@ export default function BrochureDownload({
         }`}
       >
         <div className="bg-primary rounded shadow-2xl p-3 w-[220px] flex flex-col gap-3">
-          <h3 className="text-white text-md text-center font-bold">
+          <p className="text-white text-md text-center font-bold">
             Download {frmName}
-          </h3>
+          </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-            <input
+            <input aria-label="Name"
               type="text"
               name="name"
               value={leadData.name}
@@ -109,7 +109,7 @@ export default function BrochureDownload({
               className="w-full bg-white rounded-lg px-4 py-1.5 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-white/60"
             />
 
-            <input
+            <input aria-label="Mobile number"
               type="tel"
               name="number"
               value={leadData.number}
@@ -119,7 +119,7 @@ export default function BrochureDownload({
               className="w-full bg-white rounded-lg px-4 py-1.5 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-white/60"
             />
 
-            <input
+            <input aria-label="Email address"
               type="email"
               name="email"
               value={leadData.email}

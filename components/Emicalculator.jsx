@@ -80,10 +80,10 @@ export default function EMICalculator() {
       <div className="w-full max-w-5xl relative">
         <div className="text-center mb-10">
           <p className="text-xs tracking-[0.35em] text-primary uppercase mb-2 font-sans">
-            Real Estate Finance
+            Plan Your Sobha Hennur Purchase
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#1a1a1a] tracking-tight leading-none">
-            EMI Calculator
+            Sobha Hennur Home Loan EMI Calculator
           </h2>
           <div className="flex items-center justify-center gap-3 mt-3">
             <div className="h-px w-16 bg-primary" />
@@ -91,7 +91,7 @@ export default function EMICalculator() {
             <div className="h-px w-16 bg-primary" />
           </div>
           <p className="mt-4 text-gray-800 text-sm font-sans tracking-wide max-w-md mx-auto">
-            Plan your home loan with confidence. Get a detailed breakdown of your monthly commitment.
+            With prices starting at ₹2.40 Cr onwards, most buyers fund part of their Sobha Hennur apartment with a home loan. Work out your monthly instalment before you book.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function EMICalculator() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-[#1a1a1a] tracking-tight font-sans">
-                Loan Details
+                Your Loan Inputs
               </h3>
             </div>
 
@@ -119,7 +119,8 @@ export default function EMICalculator() {
                     type="number"
                     value={loanAmount}
                     onChange={(e) => setLoanAmount(e.target.value)}
-                    placeholder="e.g. 5000000"
+                    aria-label="Loan amount in rupees"
+                    placeholder="e.g. 19200000"
                     className={`w-full pl-10 pr-4 py-3.5 rounded-xl border-2 border-gray-600 bg-white text-[#1a1a1a] font-sans text-base outline-none transition-all placeholder:text-[#c4b49e] focus:border-[#b8860b] focus:bg-white ${
                       errors.loanAmount ? "border-red-400" : "border-[#e8ddd0]"
                     }`}
@@ -144,6 +145,7 @@ export default function EMICalculator() {
                     type="number"
                     value={interestRate}
                     onChange={(e) => setInterestRate(e.target.value)}
+                    aria-label="Interest rate per year (%)"
                     placeholder="e.g. 8.5"
                     step="0.1"
                     className={`w-full pl-4 pr-10 py-3.5 rounded-xl border-2 border-gray-600 bg-white text-[#1a1a1a] font-sans text-base outline-none transition-all placeholder:text-[#c4b49e] focus:border-[#b8860b] focus:bg-white ${
@@ -166,6 +168,7 @@ export default function EMICalculator() {
                     type="number"
                     value={tenure}
                     onChange={(e) => setTenure(e.target.value)}
+                    aria-label="Loan tenure in years"
                     placeholder="e.g. 20"
                     className={`w-full pl-4 pr-16 py-3.5 rounded-xl border-2 border-gray-600 bg-white text-[#1a1a1a] font-sans text-base outline-none transition-all placeholder:text-[#c4b49e] focus:border-[#b8860b] focus:bg-white ${
                       errors.tenure ? "border-red-400" : "border-[#e8ddd0]"
@@ -207,19 +210,19 @@ export default function EMICalculator() {
               <div className="bg-white rounded-2xl shadow-xl border border-[#e8ddd0] p-8 flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-sm font-semibold tracking-widest text-black uppercase mb-4 font-sans">
-                    About This Calculator
+                    How to Use It
                   </h3>
                   <p className="text-gray-800 text-sm font-sans leading-relaxed">
-                    Easily estimate your monthly home loan payments. Enter your loan amount, annual interest rate, and tenure to plan your budget effectively.
+                    Banks usually lend up to 80% of the property value, so on a ₹2.40 Cr unit the loan could be around ₹1.92 Cr. Enter the amount you plan to borrow, the rate your bank offers and the number of years to see your EMI, total interest and total repayment.
                   </p>
                 </div>
                 <div className="mt-6 space-y-3">
-                  {["Loan amount", "Interest rate", "Tenure in years"].map((item, i) => (
+                  {["Enter the loan amount you need", "Add the interest rate your bank quotes", "Choose the loan tenure in years"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className="w-6 h-6 rounded-full bg-[#f0ebe3] flex items-center justify-center text-[#b8860b] text-xs font-bold font-sans">
                         {i + 1}
                       </div>
-                      <span className="text-sm text-[#6b5e4e] font-sans">Enter {item}</span>
+                      <span className="text-sm text-[#6b5e4e] font-sans">{item}</span>
                     </div>
                   ))}
                   <div className="flex items-center gap-3">
@@ -313,7 +316,7 @@ export default function EMICalculator() {
         </div>
 
         <p className="text-center text-xs text-[#a89880] mt-6 font-sans tracking-wide">
-          * EMI calculations are indicative. Actual figures may vary based on lender terms.
+          * Indicative figures only. Your actual EMI depends on the amount your bank sanctions, its interest rate and fees, and the final Sobha Hennur payment plan.
         </p>
       </div>
     </div>

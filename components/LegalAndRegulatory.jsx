@@ -8,13 +8,13 @@ export default function LegalAndRegulatory() {
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="legal-regulatory-framework-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Legal & Regulatory Framework
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <img
+                <img width={620} height={350}
               className="w-full lg:w-1/2 m-auto mb-6"
               src="/images/legal-regulatory-framework.webp"
               alt="Legal & Regulatory Framework"

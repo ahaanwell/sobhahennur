@@ -4,18 +4,18 @@ export default function FaqSection() {
     return (
         <section
             id="faq"
-            aria-labelledby="rera-heading"
+            aria-labelledby="faq-heading"
             className="w-full bg-white pt-14 px-4 md:px-0"
         >
             <div className="max-w-5xl mx-auto">
                 <h2
-                    id="amenities-heading"
+                    id="faq-heading"
                     className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
                 >
                     Frequently Asked Questions about Sobha Hennur
                 </h2>
                 <div className="w-full h-px bg-gray-200 mb-5" />
-                <div className="space-y-6 mt-6">
+                <div className="space-y-6 my-6">
                   <div className="space-y-6 text-gray-800">
   <h3 className="text-xl font-semibold text-gray-900">
     1. What is Sobha Hennur?

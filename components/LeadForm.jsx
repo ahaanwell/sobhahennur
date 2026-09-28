@@ -52,7 +52,7 @@ function LeadForm() {
     <div className="w-full lg:w-[400px] bg-white rounded-2xl shadow-2xl p-8 flex-shrink-0">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">Book Site Visit</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              <input
+              <input aria-label="Name"
                 type="text"
                 name="name"
                   value={leadData.name}
@@ -62,7 +62,7 @@ function LeadForm() {
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b8860b] text-sm"
               />
               <div className="flex gap-2">
-                <select
+                <select aria-label="Country code"
                   name="countryCode"
                   value={leadData.countryCode}
                   onChange={handleChange}
@@ -73,7 +73,7 @@ function LeadForm() {
                   <option value="+44">+44</option>
                   <option value="+971">+971</option>
                 </select>
-                <input
+                <input aria-label="Mobile number"
                   type="tel"
                   placeholder="Mobile No"
                   name="number"
@@ -83,7 +83,7 @@ function LeadForm() {
                   className="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b8860b] text-sm"
                 />
               </div>
-              <input
+              <input aria-label="Email address"
                 type="email"
                 name="email"
                 placeholder="E-Mail Address"
