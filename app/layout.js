@@ -110,10 +110,7 @@ export const metadata = {
   category: "Real Estate",
 
   verification: {
-    google: [
-      "XnQjIMSQGzsEA6dSOT_sqOIHL__aRj8zn2coEhljaKc",
-      "wGOe7eM9S3sTcvkAIgKYcnLLqYWikwMUPS7Ws_SPeFs",
-    ],
+    google: "wGOe7eM9S3sTcvkAIgKYcnLLqYWikwMUPS7Ws_SPeFs",
   },
 };
 
