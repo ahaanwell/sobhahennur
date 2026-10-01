@@ -38,78 +38,81 @@ export default function PaymentPlanStructure() {
     Illustrative K-RERA Milestone Framework
   </h3>
 
-  <table className="mt-4 w-full border-collapse text-left">
+  {/* Scrolls sideways on small screens instead of squeezing the columns */}
+  <div className="mt-4 overflow-x-auto">
+  <table className="w-full min-w-[480px] border-collapse text-left text-sm md:text-base">
     <thead>
       <tr>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Stage
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Trigger Event
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Typical in Karnataka
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Booking
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Application accepted and apartment allotment confirmed
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           A booking instalment
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Agreement to Sale
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Sale agreement signed, after K-RERA registration
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           A further instalment on signing
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Construction milestones
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Foundation, structure, floor-wise construction, masonry, finishing
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           The bulk of the consideration, released stage by stage
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Registration
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Sale deed and registration of the apartment
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Stamp duty and registration charges, payable by the buyer
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Handover
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Completion, snagging and possession of the finished apartment
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Balance consideration, plus maintenance and the maintenance deposit
         </td>
       </tr>
     </tbody>
   </table>
+  </div>
 
   <h3 className="text-xl font-semibold text-gray-900">
     What to Insist On

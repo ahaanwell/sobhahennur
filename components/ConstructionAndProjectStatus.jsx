@@ -66,116 +66,119 @@ export default function ConstructionAndProjectStatus() {
     The sequence below reflects the current project stage and the information presently available. <strong>These are current project details and expected timelines, not a substitute for the final registered project documentation.</strong> The applicable approved plans, construction schedule and possession commitment should be verified against the RERA registration and registered agreement once available.
   </p>
 
-  <table className="mt-4 w-full border-collapse text-left">
+  {/* Scrolls sideways on small screens instead of squeezing the columns */}
+  <div className="mt-4 overflow-x-auto">
+  <table className="w-full border-collapse text-left text-sm md:text-base">
     <thead>
       <tr>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           MilestoneStatus / stated date
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           <br />
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Project details and apartment configurations released
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Current
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Indicative price information
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           ₹2.40 Cr onwards, subject to change
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Project status
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Pre-Launch
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           RERA approval
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Under process; registration number not yet provided
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Phase 1
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Approximately 17 Acres
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Total development
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           45 Acres
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Apartment inventory
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           4,400+ units
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Apartment configurations
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           2, 3, 3.5 & 4 BHK Apartments
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Apartment sizes
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           1,500 - 2,230 Sq.Ft.
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Construction and handover
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Stage-wise programme not published
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Possession
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Expected by 2030
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Builder
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           SOBHA Limited
         </td>
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
                 </div>
             </div>

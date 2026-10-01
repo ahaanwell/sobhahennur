@@ -26,82 +26,85 @@ export default function RateAnalysis() {
     One number is important when comparing this project fairly with other premium residential developments: <strong><a href="https://www.sobhahennur.co/price">₹2.40 Cr onwards is the current starting price for Sobha Hennur apartments</a></strong>, while the applicable per-sq.ft. value depends on the apartment's configuration and saleable area. Since the project includes multiple apartment types and sizes, comparing only the headline price without considering the apartment's area can give an incomplete picture. The current apartment sizes range from <strong>1,500 to 2,230 Sq.Ft.</strong>, making the area and configuration important factors when evaluating the overall cost.
   </p>
 
-  <table className="mt-4 w-full border-collapse text-left">
+  {/* Scrolls sideways on small screens instead of squeezing the columns */}
+  <div className="mt-4 overflow-x-auto">
+  <table className="w-full min-w-[560px] border-collapse text-left text-sm md:text-base">
     <thead>
       <tr>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Configuration
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Apartment Size (saleable area)
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Starting Price
         </th>
-        <th className="border border-gray-300 px-4 py-3 font-semibold">
+        <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
           Pricing Basis
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           2 BHK Apartments
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           1,500 Sq.Ft. onwards
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           ₹2.40 Cr onwards
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Based on applicable apartment pricing
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           3 BHK Apartments
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Up to 2,230 Sq.Ft.
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Subject to project pricing
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Based on applicable apartment pricing
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           3.5 BHK Apartments
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Up to 2,230 Sq.Ft.
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Subject to project pricing
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Based on applicable apartment pricing
         </td>
       </tr>
       <tr>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           4 BHK Apartments
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Up to 2,230 Sq.Ft.
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Subject to project pricing
         </td>
-        <td className="border border-gray-300 px-4 py-3">
+        <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
           Based on applicable apartment pricing
         </td>
       </tr>
     </tbody>
   </table>
+  </div>
 
   <p className="leading-relaxed">
     On that basis, <strong>Sobha Hennur apartments start from approximately ₹2.40 Cr onwards</strong>, with the final price varying according to the selected configuration, apartment size and applicable project pricing. The project is planned across <strong><a href="https://www.sobhahennur.co/master-plan">45 acres</a></strong>, with approximately <strong>17 acres forming Phase 1</strong> and more than <strong>4,400 residential units</strong> planned across the overall development. Additional transaction-related costs should be considered separately when calculating the complete purchase outlay.

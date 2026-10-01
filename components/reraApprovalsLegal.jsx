@@ -87,44 +87,47 @@ export default function ReraApprovalsLegalDocumentation() {
                             The current project details state an indicative starting price of <strong>₹2.40 Cr onwards</strong> and an expected possession timeline of <strong>2030</strong>. These details should be treated as subject to change while the project remains at the pre-launch stage. Once the project is registered, buyers should compare the applicable registered information and agreement terms with the details presented during the pre-launch period.
                         </p>
 
-                        <table className="mt-4 w-full border-collapse text-left">
+                        {/* Scrolls sideways on small screens instead of squeezing the columns */}
+  <div className="mt-4 overflow-x-auto">
+  <table className="w-full border-collapse text-left text-sm md:text-base">
                             <thead>
                                 <tr>
-                                    <th className="border border-gray-300 px-4 py-3 font-semibold">
+                                    <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
                                         Sl. No.
                                     </th>
-                                    <th className="border border-gray-300 px-4 py-3 font-semibold">
+                                    <th className="border border-gray-300 px-3 py-2 md:px-4 md:py-3 font-semibold">
                                         Ideal Buyer Profile
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="border border-gray-300 px-4 py-3">1</td>
-                                    <td className="border border-gray-300 px-4 py-3">
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">1</td>
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
                                         Families looking for a premium apartment in a larger residential development, with 2, 3, 3.5 and 4 BHK options to match different space requirements
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="border border-gray-300 px-4 py-3">2</td>
-                                    <td className="border border-gray-300 px-4 py-3">
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">2</td>
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
                                         Buyers looking for a residence on Hennur Road who want to remain within an established Bangalore residential corridor
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="border border-gray-300 px-4 py-3">3</td>
-                                    <td className="border border-gray-300 px-4 py-3">
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">3</td>
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
                                         Families seeking larger homes, including <a href="https://www.sobhahennur.co/floor-plan">3, 3.5 and 4 BHK apartments</a>, with apartment sizes extending from 1,500 to 2,230 sq.ft.
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="border border-gray-300 px-4 py-3">4</td>
-                                    <td className="border border-gray-300 px-4 py-3">
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">4</td>
+                                    <td className="border border-gray-300 px-3 py-2 md:px-4 md:py-3">
                                         Buyers comfortable evaluating a pre-launch project while waiting for RERA approval and reviewing the registered documentation before committing funds
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+  </div>
                     </div>
                     <div className="space-y-6 text-gray-800">
                         <h3 className="text-xl font-semibold text-gray-900">
